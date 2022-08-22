@@ -390,9 +390,6 @@ header ul li {
   border-radius: 5px;
 }
 
-.main {
-  margin-top: 20%;
-}
 .main_profil-pic {
   width: 0;
   height: 0;
@@ -547,13 +544,12 @@ footer p {
 }
 
 .form {
-  align-items: center;
+  display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
   padding: 20px;
   margin-top: 40%;
   background-color: rgba(255, 255, 255, 0.446);
-  z-index: 11141;
 }
 .form label {
   width: 90%;
@@ -570,6 +566,7 @@ footer p {
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin: 20px;
 }
 @media screen and (min-width: 992px) {
   .form_header {
@@ -577,22 +574,13 @@ footer p {
     justify-content: inherit;
   }
 }
-.form_header img {
-  height: 40px;
-  width: 40px;
-}
-@media screen and (min-width: 992px) {
-  .form_header img {
-    height: auto;
-    width: auto;
-  }
-}
 .form input {
   width: 90%;
   border: none;
   padding: 10px;
-  margin: 5px 0px 10px 0px;
+  margin: 10px;
   outline: none;
+  border: solid 1px #ccc;
 }
 .form input:focus {
   border: solid 2px #f9c818;
@@ -602,7 +590,10 @@ footer p {
   padding: 20px;
   margin: 5px 0px 10px 0px;
   outline: none;
-  border: none;
+  border: solid 1px #ccc;
+}
+.form textarea:focus {
+  border: solid 2px #f9c818;
 }
 .form h2 {
   margin: 20px 0px 10px 0px;
@@ -614,18 +605,7 @@ footer p {
 .form_send-btn {
   width: 50%;
   padding: 10px;
-  margin: 5px 0px 10px 0px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  color: white;
-  background: linear-gradient(#f9c818, #ec7047);
-}
-.form_close-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
+  margin: 5px 0px 40% 0px;
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
