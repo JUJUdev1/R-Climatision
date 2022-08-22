@@ -248,8 +248,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 6px 1px rgba(158, 158, 158, 0.431372549);
-  background-color: rgba(25, 24, 24, 0.8784313725);
+  box-shadow: 0 0 6px 1px rgba(10, 10, 10, 0.431372549);
+  background: linear-gradient(#f9c818, #ec7047);
   margin-right: 20px;
 }
 
@@ -332,7 +332,7 @@ h3 {
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0 0.5rem;
-  background-color: rgba(178, 173, 173, 0.9098039216);
+  background-color: rgba(25, 24, 24, 0.8784313725);
 }
 @media screen and (min-width: 992px) {
   .carousel-button {
@@ -342,8 +342,7 @@ h3 {
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #ec7047;
 }
 
 .carousel-button:focus {
@@ -356,6 +355,7 @@ h3 {
 
 .carousel-button.next {
   right: 1rem;
+  background-color: rgba(25, 24, 24, 0.8784313725);
 }
 
 header {
@@ -434,7 +434,7 @@ header ul li {
   margin: 10% 10% 30% 10%;
 }
 .main .animation {
-  animation: fadeTop 3s;
+  animation: fadeTop 3.5s;
 }
 .main_services {
   background-color: white;
@@ -509,8 +509,8 @@ footer .contact a i {
   align-items: center;
   justify-content: center;
   box-shadow: #1f1f1f 0px 0px 9px 2px;
-  background-color: #e76931;
-  margin-right: 20px;
+  background: linear-gradient(#f9c818, #ec7047);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 footer .contact h2 {
   margin-top: 120px;
@@ -566,7 +566,6 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   margin-top: 40%;
   background-color: rgba(255, 255, 255, 0.446);
   backdrop-filter: blur(1px);
@@ -576,7 +575,6 @@ footer p {
   width: 90%;
 }
 .form_header {
-  width: 100%;
   margin: 20px;
 }
 .form_header strong {
@@ -585,7 +583,7 @@ footer p {
 .form input {
   width: 90%;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 20px;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: solid 1px #ccc;
@@ -607,9 +605,6 @@ footer p {
 .form h2 {
   margin: 20px 0px 10px 0px;
   font-size: 20px;
-}
-.form h3 {
-  margin-bottom: 10px;
 }
 .form_send-btn {
   width: 50%;

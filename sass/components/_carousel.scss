@@ -71,7 +71,7 @@
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0 0.5rem;
-  background-color: rgba(178, 173, 173, 0.9098039216);
+  background-color: rgba(25, 24, 24, 0.8784313725);
   @media screen and (min-width: 992px) {
     display: none;
   }
@@ -79,8 +79,7 @@
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #ec7047;
 }
 
 .carousel-button:focus {
@@ -93,4 +92,5 @@
 
 .carousel-button.next {
   right: 1rem;
+  background-color: rgba(25, 24, 24, 0.8784313725);
 }
