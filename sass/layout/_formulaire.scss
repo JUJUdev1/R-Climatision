@@ -5,6 +5,7 @@
   padding: 20px;
   margin-top: 40%;
   background-color: rgba(255, 255, 255, 0.446);
+  backdrop-filter: blur(1px);
   label {
     width: 90%;
   }
@@ -30,6 +31,7 @@
     padding: 10px;
     margin: 10px;
     outline: none;
+    box-shadow: inset 0px 0px 4px 0px;
     border: solid 1px #ccc;
     &:focus {
       border: solid 2px #f9c818;
@@ -41,6 +43,7 @@
     margin: 5px 0px 10px 0px;
     outline: none;
     border: solid 1px #ccc;
+    box-shadow: inset 0px 0px 4px 0px;
     &:focus {
       border: solid 2px #f9c818;
     }

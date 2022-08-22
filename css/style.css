@@ -418,7 +418,7 @@ header ul li {
   bottom: 0;
 }
 .main_a-propos {
-  background: rgba(0, 94, 248, 0.768627451);
+  background: rgba(25, 24, 24, 0.8784313725);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -465,7 +465,7 @@ header ul li {
 }
 
 footer {
-  background-color: rgba(0, 94, 248, 0.768627451);
+  background-color: rgba(25, 24, 24, 0.8784313725);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -560,6 +560,7 @@ footer p {
   padding: 20px;
   margin-top: 40%;
   background-color: rgba(255, 255, 255, 0.446);
+  backdrop-filter: blur(1px);
 }
 .form label {
   width: 90%;
@@ -590,6 +591,7 @@ footer p {
   padding: 10px;
   margin: 10px;
   outline: none;
+  box-shadow: inset 0px 0px 4px 0px;
   border: solid 1px #ccc;
 }
 .form input:focus {
@@ -601,6 +603,7 @@ footer p {
   margin: 5px 0px 10px 0px;
   outline: none;
   border: solid 1px #ccc;
+  box-shadow: inset 0px 0px 4px 0px;
 }
 .form textarea:focus {
   border: solid 2px #f9c818;
