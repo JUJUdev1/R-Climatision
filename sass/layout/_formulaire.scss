@@ -6,32 +6,23 @@
   margin-top: 40%;
   background-color: rgba(255, 255, 255, 0.446);
   backdrop-filter: blur(1px);
+  border-bottom: rgb(0 0 0 / 50%) solid 1px; // nécessaire pour cacher le bordure qui se crée par le backdrop-filter
   label {
     width: 90%;
   }
-  @media screen and (min-width: 992px) {
-    max-width: 50%;
-  }
   &_header {
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
     margin: 20px;
-    @media screen and (min-width: 992px) {
-      flex-direction: row;
-      justify-content: inherit;
+    strong{
+      color: #f9aa18;
     }
   }
   input {
     width: 90%;
-    border: none;
     padding: 10px;
     margin: 10px;
     outline: none;
-    box-shadow: inset 0px 0px 4px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: solid 1px #ccc;
     &:focus {
       border: solid 2px #f9c818;
@@ -43,7 +34,7 @@
     margin: 5px 0px 10px 0px;
     outline: none;
     border: solid 1px #ccc;
-    box-shadow: inset 0px 0px 4px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     &:focus {
       border: solid 2px #f9c818;
     }

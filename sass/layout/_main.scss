@@ -5,9 +5,6 @@
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
     border-bottom: 30px solid blue;
-    img {
-      object-fit: cover;
-    }
   }
   &_svg {
     position: relative;
@@ -26,6 +23,10 @@
       margin: 10% 10% 30% 10%;
     }
   }
+  .animation {
+    animation: fadeTop 3s;
+  }
+
   &_services {
     background-color: white;
     display: flex;
@@ -44,6 +45,7 @@
       justify-content: space-evenly;
     }
   }
+
   &_my-work {
     background: #e5e5e5;
     h2 {

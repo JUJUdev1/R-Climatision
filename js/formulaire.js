@@ -26,7 +26,6 @@ function controlerFormulaire() {
   const prenom = document.getElementById("prenom");
   const email = document.getElementById("email_id");
   const telephone = document.getElementById("telephone_id");
-  const message = document.getElementById("message");
   // verifier les champs
   nom.addEventListener("input", function (event) {
     let nomInput = event.target.value;
@@ -101,6 +100,8 @@ function envoyerFormulaire() {
           p.style.color = "green";
           p.style.fontSize = "15px";
           p.style.fontWeight = "bold";
+          p.style.position = "absolute";
+          p.style.top = "135px";
           formulaire.appendChild(p);
           setTimeout(function () {
             p.style.display = "none";
@@ -113,6 +114,8 @@ function envoyerFormulaire() {
           p.style.color = "red";
           p.style.fontSize = "15px";
           p.style.fontWeight = "bold";
+          p.style.position = "absolute";
+          p.style.top = "135px";
           formulaire.appendChild(p);
           setTimeout(function () {
             p.style.display = "none";
@@ -124,6 +127,8 @@ function envoyerFormulaire() {
       p.style.color = "red";
       p.style.fontSize = "15px";
       p.style.fontWeight = "bold";
+      p.style.position = "absolute";
+      p.style.top = "135px";
       formulaire.appendChild(p);
       setTimeout(function () {
         p.style.display = "none";
