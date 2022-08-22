@@ -1,0 +1,21 @@
+.contact-button {
+  position: fixed;
+  z-index: 3;
+  background: none;
+  border: none;
+  bottom: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  right: 1rem;
+  i {
+    color: white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 6px 1px #9e9e9e6e;
+        background-color: rgba(25, 24, 24, 0.8784313725);
+        margin-right: 20px;
+  }
+}

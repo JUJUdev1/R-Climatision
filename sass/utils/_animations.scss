@@ -1,0 +1,7 @@
+// animation bouton
+.btn_animation {
+  &:hover {
+    transform: scale(1.03);
+    background: linear-gradient(#f8cc2f, #f1764d);
+  }
+}
