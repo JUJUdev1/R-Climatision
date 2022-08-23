@@ -40,7 +40,7 @@
       />
     <!-- background body position fixed -->
 
-    <header>
+    <header id="header">
       <div class="header_container">
         <img src="./images/logo-png.webp" alt="Logo de l'entreprise" />
         <h1>Le spécialiste de la climatisation</h1>
@@ -49,10 +49,10 @@
           <a id="link" href="#"><span id="burger"></span></a>
           <!-- burger -->
           <ul class="list-unstyled" id="menu">
-            <li class="btn_animation"><a href="#">Acceuil</a></li>
-            <li class="btn_animation"><a href="#">Préstations</a></li>
-            <li class="btn_animation"><a href="#">Réalisations</a></li>
-            <li class="btn_animation"><a href="#">Contactez nous</a></li>
+            <li class="btn_animation"><a href="#">Accueil</a></li>
+            <li class="btn_animation"><a href="#services">Préstations</a></li>
+            <li class="btn_animation"><a href="#realisation">Réalisations</a></li>
+            <li class="btn_animation"><a href="#contact">Contactez nous</a></li>
           </ul>
         </nav>
       </div>
@@ -94,6 +94,7 @@
       >
         Envoyer
       </button>
+      
     </section>
 
     <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -209,7 +210,7 @@
         </div>
       </section>
       
-      <section class="main_services">
+      <section class="main_services" id="realisation">
         <h2>Mes Réalisations</h2>
         <div class="carousel" data-carousel>
           <button
