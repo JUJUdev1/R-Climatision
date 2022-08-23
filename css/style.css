@@ -450,7 +450,7 @@ header ul li {
   color: white;
 }
 .main_a-propos p {
-  margin: 10% 10% 30% 10%;
+  margin: 10%;
 }
 .main .animation {
   animation: fadeTop 3.5s;
@@ -546,6 +546,7 @@ footer .contact a i {
   height: 35px;
   display: flex;
   align-items: center;
+  margin-right: 10px;
   justify-content: center;
   box-shadow: #1f1f1f 0px 0px 9px 2px;
   background: linear-gradient(#f9c818, #ec7047);
@@ -610,6 +611,11 @@ footer p {
 @media screen and (min-width: 768px) {
   .form {
     margin-top: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form {
+    margin-top: 15%;
   }
 }
 .form label {
