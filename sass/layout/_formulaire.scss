@@ -3,9 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 40%;
-  background-color: rgba(255, 255, 255, 0.446);
-  backdrop-filter: blur(1px);
-  border-bottom: rgb(0 0 0 / 50%) solid 1px; // nécessaire pour cacher le bordure qui se crée par le backdrop-filter
   label {
     width: 90%;
   }
@@ -44,7 +41,7 @@
   &_send-btn {  
     width: 50%;
     padding: 10px;
-    margin: 5px 0px 40% 0px;
+    margin: 5px 0px 0px 0px;
     border: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -52,4 +49,8 @@
     color: white;
     background: linear-gradient(#f9c818, #ec7047);
   }
+}
+
+.svg {
+  margin-bottom: -3px;
 }

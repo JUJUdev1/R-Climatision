@@ -301,9 +301,9 @@ h3 {
 }
 
 .slide > img {
-  display: block;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
 }
 
 .slide[data-active] {
@@ -358,6 +358,10 @@ h3 {
   background-color: rgba(25, 24, 24, 0.8784313725);
 }
 
+.service_details {
+  background-color: none;
+}
+
 header {
   display: flex;
 }
@@ -409,20 +413,6 @@ header ul li {
   border-radius: 5px;
 }
 
-.main_profil-pic {
-  width: 0;
-  height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 30px solid blue;
-}
-.main_svg {
-  position: relative;
-}
-.main svg {
-  position: absolute;
-  bottom: 0;
-}
 .main_a-propos {
   background: rgba(25, 24, 24, 0.8784313725);
   display: flex;
@@ -444,15 +434,28 @@ header ul li {
   padding-bottom: 50px;
 }
 .main_services h2 {
-  padding: 10px;
   width: 100%;
   text-align: center;
+  margin: 40px;
 }
 .main_services-description {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
-  justify-content: space-evenly;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.main_services img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+.main_services h3 {
+  margin: 50px;
+}
+.main_services p {
+  margin: 40px;
 }
 .main_my-work {
   background: #e5e5e5;
@@ -471,6 +474,7 @@ header ul li {
   z-index: -100;
   width: 100%;
   top: 0;
+  filter: blur(1px);
 }
 
 footer {
@@ -567,9 +571,6 @@ footer p {
   flex-direction: column;
   align-items: center;
   margin-top: 40%;
-  background-color: rgba(255, 255, 255, 0.446);
-  backdrop-filter: blur(1px);
-  border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
 }
 .form label {
   width: 90%;
@@ -609,12 +610,16 @@ footer p {
 .form_send-btn {
   width: 50%;
   padding: 10px;
-  margin: 5px 0px 40% 0px;
+  margin: 5px 0px 0px 0px;
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   color: white;
   background: linear-gradient(#f9c818, #ec7047);
+}
+
+.svg {
+  margin-bottom: -3px;
 }
 
 /*# sourceMappingURL=style.css.map */
