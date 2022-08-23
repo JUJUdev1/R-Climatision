@@ -191,7 +191,7 @@ h3 {
   top: 30px;
   z-index: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #burger {
     display: none;
   }
@@ -285,6 +285,7 @@ h3 {
     position: unset;
     opacity: 1;
     width: 30%;
+    padding: 0;
   }
 }
 
@@ -378,10 +379,20 @@ header img {
   width: 70%;
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  header img {
+    width: 20%;
+  }
+}
 header h1 {
   margin: 10px;
   color: white;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    width: 100%;
+  }
 }
 header ul {
   position: absolute;
@@ -398,6 +409,19 @@ header ul {
   transition: all 0.8s ease;
   padding: 10px 0;
 }
+@media screen and (min-width: 768px) {
+  header ul {
+    flex-direction: row;
+    top: auto;
+    left: auto;
+    width: 100%;
+    position: inherit;
+    height: auto;
+    background: none;
+    transform: inherit;
+    padding: 0;
+  }
+}
 header ul a {
   color: white;
 }
@@ -411,6 +435,11 @@ header ul li {
   text-align: center;
   background: linear-gradient(#f9c818, #ec7047);
   border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  header ul li {
+    padding: 10px;
+  }
 }
 
 .main_a-propos {
@@ -446,13 +475,19 @@ header ul li {
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+@media screen and (min-width: 768px) {
+  .main_services-description {
+    margin: 0;
+    width: 100%;
+  }
+}
 .main_services img {
   width: 100%;
   object-fit: cover;
   height: 220px;
 }
 .main_services h3 {
-  margin: 50px;
+  margin: 50px 0px 0px;
 }
 .main_services p {
   margin: 40px;
@@ -474,7 +509,7 @@ header ul li {
   z-index: -100;
   width: 100%;
   top: 0;
-  filter: blur(1px);
+  filter: blur(1px) opacity(0.5);
 }
 
 footer {
@@ -572,8 +607,18 @@ footer p {
   align-items: center;
   margin-top: 40%;
 }
+@media screen and (min-width: 768px) {
+  .form {
+    margin-top: 30%;
+  }
+}
 .form label {
   width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .form label {
+    width: 50%;
+  }
 }
 .form_header {
   margin: 20px;
@@ -589,6 +634,11 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: solid 1px #ccc;
 }
+@media screen and (min-width: 768px) {
+  .form input {
+    width: 50%;
+  }
+}
 .form input:focus {
   border: solid 2px #f9c818;
 }
@@ -599,6 +649,11 @@ footer p {
   outline: none;
   border: solid 1px #ccc;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+@media screen and (min-width: 768px) {
+  .form textarea {
+    width: 50%;
+  }
 }
 .form textarea:focus {
   border: solid 2px #f9c818;
@@ -616,6 +671,11 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   color: white;
   background: linear-gradient(#f9c818, #ec7047);
+}
+@media screen and (min-width: 768px) {
+  .form_send-btn {
+    width: 30%;
+  }
 }
 
 .svg {
