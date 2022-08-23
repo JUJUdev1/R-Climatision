@@ -14,16 +14,6 @@
     transform: translateY(0);
   }
 }
-@keyframes fadeLeft {
-  0% {
-    opacity: 0;
-    transform: translate(50px, 100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
