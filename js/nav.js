@@ -22,12 +22,29 @@ link.addEventListener("click", function (e) {
   menu.classList.toggle("open");
 });
 
-// si on scroll est que le menu est affiché, on le cache aprés 2sec
-window.addEventListener("scroll", function () {
-  if (menu.classList.contains("open")) {
-    setTimeout(function () {
-      menu.classList.remove("open");
-      burger.classList.remove("open");
-    }, 1000);
+// quand on clique sur un lien du menu, le menu se ferme
+menu.addEventListener("click", function (e) {
+  if (e.target.tagName === "A") {
+    burger.classList.remove("open");
+    menu.classList.remove("open");
   }
-});
+}
+);
+
+
+// on cache le logo et le h1 quand on scroll
+let logo = document.getElementById("logo");
+let h1 = document.getElementById("h1");
+let header = document.getElementById("header2");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    logo.style.display = "none";
+    h1.style.display = "none";
+    header.style.height = "40px";
+  } else if (window.scrollY <= 100) {
+    logo.style.display = "block";
+    h1.style.display = "block";
+    header.style.height = "auto";
+  }
+}
+);

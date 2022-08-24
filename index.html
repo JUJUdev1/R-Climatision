@@ -33,17 +33,21 @@
 
   <body>
     <!-- background body position fixed -->
-      <img
-        class="main_background"
-        src="images/mobile-background.webp"
-        alt="background d'une climatisation"
-      />
+    <img
+      class="main_background"
+      src="images/mobile-background.webp"
+      alt="background d'une climatisation"
+    />
     <!-- background body position fixed -->
 
     <header id="header">
-      <div class="header_container">
-        <img src="./images/logo-png.webp" alt="Logo de l'entreprise" />
-        <h1>Le spécialiste de la climatisation</h1>
+      <div class="header_container" id="header2">
+        <img
+          id="logo"
+          src="./images/logo-png.webp"
+          alt="Logo de l'entreprise"
+        />
+        <h1 id="h1">Le spécialiste de la climatisation</h1>
         <nav>
           <!-- burger -->
           <a id="link" href="#"><span id="burger"></span></a>
@@ -51,7 +55,9 @@
           <ul class="list-unstyled" id="menu">
             <li class="btn_animation"><a href="#">Accueil</a></li>
             <li class="btn_animation"><a href="#services">Préstations</a></li>
-            <li class="btn_animation"><a href="#realisation">Réalisations</a></li>
+            <li class="btn_animation">
+              <a href="#realisation">Réalisations</a>
+            </li>
             <li class="btn_animation"><a href="#contact">Contactez nous</a></li>
           </ul>
         </nav>
@@ -94,7 +100,6 @@
       >
         Envoyer
       </button>
-      
     </section>
 
     <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -209,41 +214,39 @@
           </ul>
         </div>
       </section>
-      
-      <section class="main_services" id="realisation">
-        <h2>Mes Réalisations</h2>
-        <div class="carousel" data-carousel>
-          <button
-            aria-label="Bouton suivant"
-            class="carousel-button prev"
-            data-carousel-button="prev"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            aria-label="Bouton suivant"
-            class="carousel-button next"
-            data-carousel-button="next"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <ul data-slides>
-            <li class="slide" data-active>
-              <img src="" alt="" />
-              <h3>Title</h3>
-              <p>description1</p>
-            </li>
-            <li class="slide">
-              <img src="" alt="Nature Image #2" />
-              <h3>Title</h3>
-              <p>description2</p>
-            </li>
-            <li class="slide">
-              <img src="" alt="Nature Image #3" />
-              <h3>Title</h3>
-              <p>description3</p>
-            </li>
-          </ul>
+
+      <section class="main_realisation">
+        <div class="gallery-container">
+          <div class="track">
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img src="/images/depannage clim.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img src="/images/entretenir-climatisation.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img src="/images/installation-clim.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img src="/images/mobile-background.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -287,6 +290,7 @@
       </section>
     </footer>
     <script src="./js/formulaire.js" type="text/javascript"></script>
+    <script src="./js/galery.js" type="text/javascript"></script>
     <script src="./js/carousel.js" type="text/javascript"></script>
     <script src="./js/nav.js" type="text/javascript"></script>
     <script src="./js/fade_animation.js" type="text/javascript"></script>
