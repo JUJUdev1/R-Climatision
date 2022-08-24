@@ -255,7 +255,7 @@ h3 {
 .gallery-container {
   overflow: hidden;
   height: 100%;
-  width: 300px;
+  width: 100%;
   margin: auto;
   border-radius: 0.5rem;
 }
