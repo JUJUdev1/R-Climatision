@@ -49,12 +49,11 @@
   }
 
   &_realisation {
-      background: white;
-      height: 500px;
-      width: 90rem;
-      max-width: 100%;
-      margin: auto;
-      padding: 2rem;
+    background: white;
+    h2 {
+      text-align: center;
+      margin: 0px 0px 40px 0px;
+    }
   }
 
   &_my-work {

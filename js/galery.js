@@ -1,5 +1,5 @@
 function slider(settings) {
-    let imgs = document.querySelectorAll("img");
+    let Imgs = document.querySelectorAll(".cell img");
     let track = document.querySelector(".track");
     let items = document.querySelectorAll(".cell");
     let index = 1;
@@ -10,7 +10,7 @@ function slider(settings) {
     track.appendChild(firstClone);
     track.prepend(lastClone);
     let allItems = document.querySelectorAll(".cell");
-    let totalImgs = document.querySelectorAll("img");
+    let totalImgs = document.querySelectorAll(".cell img");
     let controller = 1;
     let slideControl = +100 / totalImgs.length;
     const slideControlDefault = (100 / totalImgs.length) * controller;
