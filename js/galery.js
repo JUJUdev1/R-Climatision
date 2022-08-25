@@ -14,8 +14,20 @@ function slider(settings) {
     let controller = 1;
     let slideControl = +100 / totalImgs.length;
     const slideControlDefault = (100 / totalImgs.length) * controller;
-    track.setAttribute("style", "width:" + totalImgs.length * 100 + "%;");
-    track.style.transform = "translateX(-" + slideControl + "%)";
+
+    if (window.innerWidth <= 768) {
+        track.setAttribute("style", "width:" + totalImgs.length * 100 + "%;");
+        console.log(track.style.width);
+    }
+   if (window.innerWidth > 768) {
+        track.setAttribute("style", "width:" + totalImgs.length * 50 + "%;");
+        console.log(track.style.width);
+    }
+    if (window.innerWidth > 1024) {
+        track.setAttribute("style", "width:" + totalImgs.length * 33.333333 + "%;");
+        console.log(track.style.width);
+    }
+  
   
     setInterval(() => {
       if (!document.hidden) {

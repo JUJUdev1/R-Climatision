@@ -242,10 +242,12 @@ h3 {
 }
 .contact-button i {
   color: white;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  font-size: 1rem;
+  height: 40px;
   display: flex;
   align-items: center;
+  border-radius: 0.25rem;
   justify-content: center;
   box-shadow: 0 0 6px 1px rgba(10, 10, 10, 0.431372549);
   background: linear-gradient(#f9c818, #ec7047);
@@ -254,13 +256,14 @@ h3 {
 
 .gallery-container {
   overflow: hidden;
-  height: 200px;
+  height: 500px;
   margin: auto;
   border-radius: 0.5rem;
 }
 
 .content {
   height: 100%;
+  margin: 20px;
 }
 
 .img-wrapper {
@@ -574,6 +577,12 @@ footer .contact_details {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  footer .contact_details {
+    flex-direction: row;
+    margin: 50px;
+  }
+}
 footer .contact_detail {
   margin: 20px;
 }
@@ -601,7 +610,7 @@ footer .contact h2 {
 }
 @media screen and (min-width: 768px) {
   footer .contact h2 {
-    margin-top: 200px;
+    margin-top: 300px;
   }
 }
 @media screen and (min-width: 1440px) {

@@ -9,10 +9,12 @@
   right: 1rem;
   i {
     color: white;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        font-size: 1rem;
+        height: 40px;
         display: flex;
         align-items: center;
+        border-radius: 0.25rem;
         justify-content: center;
         box-shadow: 0 0 6px 1px #0a0a0a6e;
         background: linear-gradient(#f9c818, #ec7047);
