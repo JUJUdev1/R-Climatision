@@ -23,14 +23,12 @@ link.addEventListener("click", function (e) {
 });
 
 // quand on clique sur un lien du menu, le menu se ferme
-menu.addEventListener("click", function (e) {
-  if (e.target.tagName === "A") {
+let liens = document.querySelectorAll("#menu a");
+liens.forEach((lien) => {
+  lien.addEventListener("click", () => {
     burger.classList.remove("open");
     menu.classList.remove("open");
-  }
-}
-);
-
+  })});
 
 // on cache le logo et le h1 quand on scroll
 let logo = document.getElementById("logo");
@@ -46,5 +44,4 @@ window.addEventListener("scroll", () => {
     h1.style.display = "block";
     header.style.height = "auto";
   }
-}
-);
+});

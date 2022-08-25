@@ -465,6 +465,7 @@ header ul {
 }
 header ul a {
   color: white;
+  width: 50%;
 }
 header ul.open {
   transform: scaleY(1);
@@ -472,7 +473,6 @@ header ul.open {
 header ul li {
   padding: 20px 0;
   margin: 9px;
-  width: 50%;
   text-align: center;
   background: linear-gradient(#f9c818, #ec7047);
   border-radius: 5px;
@@ -537,6 +537,7 @@ header ul li {
 .main_realisation h2 {
   text-align: center;
   margin: 0px 0px 40px 0px;
+  padding-top: 40px;
 }
 .main_my-work {
   background: #e5e5e5;

@@ -100,10 +100,10 @@ function envoyerFormulaire() {
           p.style.color = "green";
           p.style.fontSize = "15px";
           p.style.fontWeight = "bold";
+          p.style.margin = "10px";
           formulaire.appendChild(p);
           setTimeout(function () {
             p.style.display = "none";
-            closeForm();
           }, 5000);
         })
         .catch(function (err) {
@@ -112,6 +112,7 @@ function envoyerFormulaire() {
           p.style.color = "red";
           p.style.fontSize = "15px";
           p.style.fontWeight = "bold";
+          p.style.margin = "10px";
           formulaire.appendChild(p);
           setTimeout(function () {
             p.style.display = "none";
@@ -123,12 +124,12 @@ function envoyerFormulaire() {
       p.style.color = "red";
       p.style.fontSize = "15px";
       p.style.fontWeight = "bold";
+      p.style.margin = "10px";
       formulaire.appendChild(p);
       setTimeout(function () {
         p.style.display = "none";
       }, 5000);
     }
-  }),
-    closeForm();
+  });
 }
 envoyerFormulaire();
