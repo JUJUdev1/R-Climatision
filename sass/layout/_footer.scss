@@ -11,6 +11,17 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    &_social-media {
+      display: flex; 
+      i {
+        margin-right: 10px;
+      }
+      &_icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
     &_details {
       display: flex;
       flex-direction: column;
@@ -26,20 +37,23 @@ footer {
       display: flex;
       align-items: center;
       color: white;
-      i {
-        color: white;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-        justify-content: center;
-        box-shadow: #1f1f1f 0px 0px 9px 2px;
-        background: linear-gradient(#f9c818, #ec7047);
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-      }
     }
+    &_icon {
+      color: white;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      justify-content: center;
+      box-shadow: #1f1f1f 0px 0px 9px 2px;
+      background: linear-gradient(#f9c818, #ec7047);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
     h2 {
       margin-top: 120px;
       color: white;
@@ -81,7 +95,7 @@ footer {
 
 .copyright {
   width: 100%;
-  padding: 5px;
+  padding: 20px;
   text-align: center;
   margin-top: 10px;
   font-size: small;
