@@ -11,32 +11,22 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    &_social-media {
-      display: flex; 
-      i {
-        margin-right: 10px;
-      }
-      &_icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-      }
-    }
     &_details {
       display: flex;
       flex-direction: column;
       @media screen and (min-width: 768px) {
         flex-direction: row;
-        margin: 50px;
+        margin: 50px 0px 0px;
       }
     }
     &_detail {
       margin: 20px;
-    }
-    a {
+      color: white;
       display: flex;
       align-items: center;
-      color: white;
+      i {
+        margin-right: 20px;
+      }
     }
     &_icon {
       color: white;
@@ -72,14 +62,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 50px;
-
-    a {
-      color: white;
-      margin: 20px;
-      i {
-        margin-right: 20px;
-      }
-    }
   }
   p {
     color: white;

@@ -254,6 +254,58 @@ h3 {
   margin-right: 20px;
 }
 
+.social_media {
+  display: flex;
+}
+.social_media-fcb {
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 10px;
+}
+.social_media-fcb:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.social_media-fcb a {
+  background-color: blue;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social_media-insta {
+  background-color: white;
+  border-radius: 10%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 10px;
+}
+.social_media-insta:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.social_media-insta a {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  border-radius: 10%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gallery-container {
   overflow: hidden;
   height: 500px;
@@ -574,17 +626,6 @@ footer .contact {
   flex-direction: column;
   width: 100%;
 }
-footer .contact_social-media {
-  display: flex;
-}
-footer .contact_social-media i {
-  margin-right: 10px;
-}
-footer .contact_social-media_icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
 footer .contact_details {
   display: flex;
   flex-direction: column;
@@ -592,16 +633,17 @@ footer .contact_details {
 @media screen and (min-width: 768px) {
   footer .contact_details {
     flex-direction: row;
-    margin: 50px;
+    margin: 50px 0px 0px;
   }
 }
 footer .contact_detail {
   margin: 20px;
-}
-footer .contact a {
+  color: white;
   display: flex;
   align-items: center;
-  color: white;
+}
+footer .contact_detail i {
+  margin-right: 20px;
 }
 footer .contact_icon {
   color: white;
@@ -637,13 +679,6 @@ footer address {
   display: flex;
   flex-direction: column;
   margin: 50px;
-}
-footer address a {
-  color: white;
-  margin: 20px;
-}
-footer address a i {
-  margin-right: 20px;
 }
 footer p {
   color: white;
