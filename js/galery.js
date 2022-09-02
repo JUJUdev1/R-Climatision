@@ -47,4 +47,3 @@ function slider(settings) {
     });
   }
   slider();
-  
