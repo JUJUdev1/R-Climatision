@@ -1,50 +1,389 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>R-Climatisation , Le spécialiste de la climatisation</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Project Card</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <meta
+      name="description"
+      content="R-climatisation , professionel de la pose et vente de climatisation situé a Bize-Minervois"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/db522c8f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Omd55zOvAq0vhpG2O");
+      })();
+    </script>
   </head>
+
   <body>
-    <section id="projects" class="projects">
-      <h2 class="projects_title">Mes Projets</h2>
-      <section id="cards" class="cards">
-        <div class="card">
-          <h3 class="card_title">Mon Premier Projet JavaScript</h3>
-          <img class="card_img" src="./images/19199360-1024x683.jpeg" alt="images du logo JavaScript">
-          <p class="card_text">Ce projet JavaScript est un site portfolio de tout mes projets sous forme de cartes </p>
-        </div>
-        <div class="card">
-          <h3 class="card_title">Mon Premier Projet HTML/CSS</h3>
-          <img class="card_img" src="./images/free-template-html.jpeg" alt="">
-          <p class="card_text">Ce projet HTML/CSS est un site de voyage </p>
-        </div>
-        <div class="card">
-          <h3 class="card_title">Mon Premier Projet Animations CSS avec SASS</h3>
-          <img class="card_img" src="./images/1200px-Sass_Logo_Color.svg.png" alt="">
-          <p class="card_text">Ce projet SASS est un site de commande de repas en ligne </p>
+    <!-- background body position fixed -->
+    <img
+      class="main_background"
+      src="images/mobile-background.webp"
+      alt="background d'une climatisation"
+    />
+    <!-- background body position fixed -->
+
+    <header id="header">
+      <div class="header_container" id="header2">
+        <img
+          id="logo"
+          src="./images/logo-png.webp"
+          alt="Logo de l'entreprise"
+        />
+        <h1 id="h1">Le spécialiste de la climatisation</h1>
+        <nav>
+          <!-- burger -->
+          <div id="link"><span id="burger"></span></div>
+          <!-- burger -->
+          <ul class="list-unstyled" id="menu">
+            <li class="btn_animation"><a href="#">Accueil</a></li>
+            <li class="btn_animation"><a href="#services">Prestations</a></li>
+            <li class="btn_animation">
+              <a href="#realisation">Réalisations</a>
+            </li>
+            <li class="btn_animation"><a href="#contact">Contactez nous</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="formulaire" class="form">
+      <div class="form_header">
+        <h2>Besoin d'un devis ? Remplissez notre formulaire.</h2>
+        <h3>Nous vous répondons sous 48 heures</h3>
+      </div>
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" placeholder="Ex: Dumas" required />
+
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" placeholder="Ex: Paul" required />
+
+      <label for="email_id">Email:</label>
+      <input
+        type="email"
+        id="email_id"
+        placeholder="Ex: DumasPaul@gmail.fr"
+        required
+      />
+
+      <label for="telephone_id">Téléphone:</label>
+      <input
+        type="text"
+        id="telephone_id"
+        placeholder="Ex: 0123456789"
+        required
+      />
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="" required></textarea>
+      <button
+        aria-label="Bouton envoyer"
+        class="form_send-btn btn_animation"
+        id="envoyer"
+      >
+        Envoyer
+      </button>
+    </section>
+
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="rgba(25, 24, 24, 0.8784313725)"
+        fill-opacity="1"
+        d="M0,224L1440,128L1440,320L0,320Z"
+      ></path>
+    </svg>
+
+    <main class="main">
+      <section class="main_a-propos">
+        <h2>Qui sommes nous?</h2>
+        <p id="text">
+          R-climatisation est une entreprise de climatisation qui a vu le jour
+          après 10 années d’expériences.Créée en 2022 dans l’Aude à
+          Bize-Minervois, elle a pour ambition d’accompagner au mieux ses
+          clients.Nous sommes spécialisés dans l’installation, le dépannage et
+          l’entretien.Afin de privilégier la proximité,nous intervenons autour
+          de Narbonne, Beziers, Carcassonne et les villages alentours.<br /><br />
+          Pourquoi faire appel à nous?<br /><br />
+          - VOUS êtes notre priorité. ENSEMBLE nous évaluerons vos attentes, vos
+          envies, votre budget afin de vous proposer LA SOLUTION la plus adaptée
+          qui vous correspond.<br /><br />
+          - Notre goût du Travail bien fait<br /><br />
+          - Notre RÉACTIVITÉ<br /><br />
+          - Le déplacement chez vous pour le DEVIS est GRATUIT
+        </p>
+      </section>
+
+      <section class="main_services" id="services">
+        <h2>Prestations</h2>
+        <div id="carousel" class="carousel" data-carousel>
+          <button
+            aria-label="Bouton suivant"
+            class="carousel-button prev"
+            data-carousel-button="prev"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            aria-label="Bouton suivant"
+            class="carousel-button next"
+            data-carousel-button="next"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <ul data-slides>
+            <li class="slide" data-active>
+              <div class="main_services-description">
+                <img
+                  src="./images/installation-clim.webp"
+                  alt="image installation de clim"
+                />
+                <h3>Installation</h3>
+                <p>
+                  L’installation et la mise en service de son système de
+                  climatisation sont des travaux qui requièrent des
+                  connaissances, des compétences et de la minutie. Une
+                  climatisation est un réel investissement.
+                </p>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="main_services-description">
+                <img
+                  src="./images/entretenir-climatisation.webp"
+                  alt="image entretien de clim"
+                />
+                <h3>Entretien</h3>
+                <p>
+                  L’entretien d’une climatisation est une étape obligatoire pour
+                  garantir l’efficacité et le bon fonctionnement de l’appareil.
+                  Sans entretien régulier, les performances du système peuvent
+                  être affectées.
+                </p>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="main_services-description">
+                <img
+                  src="./images/depannage-clim.webp"
+                  alt="image depannage de clim"
+                />
+                <h3>Dépannage</h3>
+                <p>
+                  Votre climatisation est en panne ou fonctionne mal, nous
+                  assurons toutes prestations de dépannage sur toutes marques de
+                  climatisation.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-    </section>
-    
-    <section id="new_project" class="new_project">
-      <h2 class="new_project-title">Ajouter un projet a mon portfolio</h2>
-      <form id="new_project-form" class="new_project-form">
-        <div class="new_project-form_input-group">
-          <label for="project-title">Titre du projet</label>
-          <input type="text" id="project-title" name="project-title" />
+
+      <section class="main_realisation" id="realisation">
+        <h2>Réalisations</h2>
+        <div class="gallery-container">
+          <div class="track">
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-1.webp"
+                    alt="photo d'une unitée exterieur de climatisation"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-2.webp"
+                    alt="photo d'une unitée extérieur contre le mur au sol"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-3.webp"
+                    alt="photo d'une climatisation contre le haut du mur de la marque mitshubishi"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-4.webp"
+                    alt="photo d'une unitée exterieur de climatisation"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-5.webp"
+                    alt="photo d'une climatisation mural de la marque mitshubishi"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-6.webp"
+                    alt="photo d'une unitée exterieur de la marque mitshubishi"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-7.webp"
+                    alt="photo d'une unitée exterieur dans le coin d'un jardin"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-8.webp"
+                    alt="photo d'une unitée exterieur de la marque mitshubishi caché derriére un buisson"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-9.webp"
+                    alt="photo d'une climatisation mural de la marque mitshubishi contre le bas du mur de la maison"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-10.webp"
+                    alt="photo d'une climatisation au dessus de porte dans une école"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-11.webp"
+                    alt="photo d'une climatisation murale dans une chambre"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="content">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/realisation-12.webp"
+                    alt="photo dun groupe d'unitée exterieur de climatisation"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="new_project-form_input-group">
-          <label for="project-img_link">Lien vers une image</label>
-          <input type="text" id="project-img_link" name="project-img_link" />
+      </section>
+    </main>
+    <footer>
+      <section class="contact" id="contact">
+        <h2>Contactez nous</h2>
+        <button aria-label="bouton haut de page" class="contact-button">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="white"
+            fill-opacity="1"
+            d="M0,288L48,250.7C96,213,192,139,288,117.3C384,96,480,128,576,160C672,192,768,224,864,240C960,256,1056,256,1152,240C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="contact_details">
+          <a class="contact_detail" href="tel:+33631866465"
+            ><i class="fa-solid fa-phone btn_animation contact_icon"></i
+            >06.31.86.64.65</a
+          >
+
+          <a class="contact_detail" href="mailto:contact@r-climatisation.fr"
+            ><i class="fa-solid fa-envelope btn_animation contact_icon"></i
+            >contact@r-climatisation.fr</a
+          >
+
+          <a
+            target="_blank"
+            class="contact_detail"
+            href="https://www.google.com/maps/place/11120+Bize-Minervois/@43.3366361,2.8692131,13z/data=!3m1!4b1!4m5!3m4!1s0x12b1ba39cf80a215:0xcef1168fc58422bf!8m2!3d43.317199!4d2.868982 "
+            ><i
+              class="fa-solid fa-map-marker-alt btn_animation contact_icon"
+            ></i
+            >11120 Bize-Minervois</a
+          >
         </div>
-        <div class="new_project-form_input-group new_project-form_input-group_textarea">
-          <label for="project-text">Description du projet</label>
-          <textarea type="text" id="project-text" name="project-text" rows="10" ></textarea>
+        <div class="social_media">
+          <div class="social_media-fcb">
+            <!-- icone facebook -->
+            <a
+              aria-label="icone facebook"
+              target="_blank"
+              href="https://www.facebook.com/R-climatisation-101724172542583/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="social_media-insta">
+            <!-- icone instagram -->
+            <a aria-label="icone instagram" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
-        <button class="new_project-button" type="submit">Créer le projet</button>
-      </form>
-    </section>
+        <p class="copyright">
+          &copy; Copyright: 2022 JuSa - Julien.sarda@icloud.com
+        </p>
+      </section>
+    </footer>
+    <script src="./js/formulaire.js"></script>
+    <script src="./js/galery.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/fade_animation.js"></script>
   </body>
 </html>

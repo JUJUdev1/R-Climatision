@@ -1,4 +1,14 @@
+@import "./utils/variables";
+@import "./utils/animations";
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./base/base";
-@import "./layout/projects";
-@import "./layout/form";
+@import "./base/typo";
+@import "./components/burger";
+@import "./components/button";
+@import "./components/gallery";
+@import "./components/carousel";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./layout/formulaire";
