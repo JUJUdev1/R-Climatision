@@ -422,7 +422,6 @@ h3 {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  font-size: 1rem;
   background: none;
   border: none;
   width: 50px;
@@ -439,6 +438,9 @@ h3 {
   .carousel-button {
     display: none;
   }
+}
+.carousel-button img {
+  width: 20px;
 }
 
 .carousel-button.prev {
