@@ -16,10 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/db522c8f88.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f59a8e472f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
       (function () {
@@ -135,20 +132,21 @@
             class="carousel-button prev"
             data-carousel-button="prev"
           >
-            <i class="fa-solid fa-arrow-left"></i>
+            <img src="./icons/arrow-left-solid.svg" alt="fleche vers la gauche">
           </button>
           <button
             aria-label="Bouton suivant"
             class="carousel-button next"
             data-carousel-button="next"
           >
-            <i class="fa-solid fa-arrow-right"></i>
+          <img src="./icons/arrow-right-solid.svg" alt="fleche vers la droite">
           </button>
 
           <ul data-slides>
             <li class="slide" data-active>
               <div class="main_services-description">
                 <img
+                class="main_services_img"
                   src="./images/installation-clim.webp"
                   alt="image installation de clim"
                 />
@@ -165,6 +163,7 @@
             <li class="slide">
               <div class="main_services-description">
                 <img
+                class="main_services_img"
                   src="./images/entretenir-climatisation.webp"
                   alt="image entretien de clim"
                 />
@@ -181,6 +180,7 @@
             <li class="slide">
               <div class="main_services-description">
                 <img
+                class="main_services_img"
                   src="./images/depannage-clim.webp"
                   alt="image depannage de clim"
                 />
@@ -328,7 +328,7 @@
       <section class="contact" id="contact">
         <h2>Contactez nous</h2>
         <button aria-label="bouton haut de page" class="contact-button">
-          <i class="fa-solid fa-arrow-up"></i>
+          <img src="./icons/arrow-up-solid.svg" alt="fleche vers le haut">
         </button>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -339,23 +339,18 @@
         </svg>
         <div class="contact_details">
           <a class="contact_detail" href="tel:+33631866465"
-            ><i class="fa-solid fa-phone btn_animation contact_icon"></i
-            >06.31.86.64.65</a
+            ><img src="./icons/phone-solid.svg" alt="icone telephone"> 06.31.86.64.65</a
           >
 
           <a class="contact_detail" href="mailto:contact@r-climatisation.fr"
-            ><i class="fa-solid fa-envelope btn_animation contact_icon"></i
-            >contact@r-climatisation.fr</a
+            ><img src="./icons/envelope-solid.svg" alt="icon email"> contact@r-climatisation.fr</a
           >
 
           <a
             target="_blank"
             class="contact_detail"
             href="https://www.google.com/maps/place/11120+Bize-Minervois/@43.3366361,2.8692131,13z/data=!3m1!4b1!4m5!3m4!1s0x12b1ba39cf80a215:0xcef1168fc58422bf!8m2!3d43.317199!4d2.868982 "
-            ><i
-              class="fa-solid fa-map-marker-alt btn_animation contact_icon"
-            ></i
-            >11120 Bize-Minervois</a
+            ><img src="./icons/location-dot-solid.svg" alt="icon de localisation"> 11120 Bize-Minervois</a
           >
         </div>
         <div class="social_media">
@@ -365,14 +360,12 @@
               aria-label="icone facebook"
               target="_blank"
               href="https://www.facebook.com/R-climatisation-101724172542583/"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
+              ><img src="./icons/facebook-f.svg" alt="icon facebook"></a>
           </div>
           <div class="social_media-insta">
             <!-- icone instagram -->
             <a aria-label="icone instagram" href="#"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+              ><img src="./icons/instagram.svg" alt="icone instagram"></a>
           </div>
         </div>
         <p class="copyright">
